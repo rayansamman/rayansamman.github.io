@@ -1,0 +1,251 @@
+/* Define custom CSS variables */
+:root {
+    --main-bg-color: rgba(24, 123, 194, 0.825);
+}
+
+/* Reset default styles for headings and paragraphs */
+h1, h2, p {}
+
+/* Style the header/navigation bar */
+header {
+    background-color: var(--main-bg-color);
+    color: #1D1B1B;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #161313;
+    font-weight:900
+}
+
+/* General body styling */
+body {
+    font-family: Comic Sans MS;
+    background-color: #f6f2f2;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Background image */
+    background-image: url('img/backg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Main content container styling */
+.mainpage {
+    margin-left: 15%;
+}
+
+/* Additional heading style */
+h2 {
+    font-family: Comic Sans MS;
+}
+
+/* Image container for hover effect */
+.image1 {
+    background-image: url('img/hz-building.jpg');
+}
+
+/* Style images with hover effect */
+.image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+
+    /* Translate the image when hovered */
+}
+
+.image:hover img {
+    transform: translate(5px, 5px); /* Adjust the values for the desired movement */
+}
+
+/* Styling for important links */
+.importantlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c1b1b;
+}
+
+.importantlinks li a {
+    display: block;
+    color: white;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+.importantlinks li a:hover {
+    background-color: #878787;
+    color: black;
+}
+
+/* Additional styling for list items */
+.list2 {
+    float: right;
+    border-left: 1px solid white;
+    font-size: 17px;
+}
+
+/* Center-aligned heading */
+h1 {
+    text-align: center;
+}
+
+/* Styling for a study monitor */
+.study-monitor {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #f8f8f8;
+    text-align: center;
+    border: 1px solid rgb(11, 40, 143);
+    border-collapse: collapse;
+}
+
+/* Styling for completion status */
+.completed {
+    background-color: #7ED321; /* Green for completed */
+    color: white;
+}
+
+.in-progress {
+    background-color: #FFD15C; /* Yellow for in-progress */
+}
+
+/* Center-aligned completeness status */
+.completeness {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for progress bar */
+.progress-bar {
+    background-color: #b7b2ca;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Styling for progress */
+.progress {
+    background-color: #4a98e2; /* Blue for progress */
+    height: 100%;
+    text-align: center;
+    color: rgb(250, 243, 243);
+}
+
+/* Button styling */
+button {
+    padding: 6px 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #2c517e96;
+}
+
+/* Centered section styling */
+section {
+    max-width: 1000px; /* Adjust the max-width as needed */
+    margin: auto; /* Center the section horizontally */
+    padding: 20px;
+    background-color: #fefffa;
+    box-shadow: 10px 10px 10px rgba(49, 73, 198, 0.1);
+    border-radius: 10px;
+    margin-top: 1%;
+    text-align: center;
+}
+
+/* General styling for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styling for image within a container */
+.image img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Styling for summary element */
+summary {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    outline: #0b0b0a;
+    border: #1c1b1b;
+    border-radius: 5px;
+}
+
+/* Styling for open summary element */
+summary:focus {
+    background-color: #2980b9;
+}
+
+/* Styling for details element */
+details {
+    border: 5px solid #110e0e;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    width: 500px;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--main-bg-color);
+    color: #090909;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mobile-first responsive styles */
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
