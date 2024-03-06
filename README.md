@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm Rayan</h1>
-- 🌱 I’m currently learning **OOP**
 
 - 📫 How to reach me **samm0001@hz.nl**
 - 👨‍💻 All of my projects are available at **https://rayansamman.github.io/**
